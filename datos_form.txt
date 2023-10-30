@@ -1,0 +1,11 @@
+/*********************************************/
+/* Solicitud de datos feria */
+/*********************************************/
+
+- Nombre completo
+- Cédula
+- Celular
+- Correo
+- Ciudad de residencia
+- Fecha de nacimiento
+- Gratis o pago

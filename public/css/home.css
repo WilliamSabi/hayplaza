@@ -1,0 +1,117 @@
+.custom-font-titu {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.custom-font {
+font-family: "Berlin Sans FB", sans-serif;
+font-weight: bold;
+}
+
+.custom-font-descri {
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+}
+
+
+.text-stroke {
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #1A365D; /* Color azul oscuro */
+}
+
+.slider {
+width: 70%;
+margin: auto;
+}
+
+.slick-slide {
+margin: 0px 20px;
+}
+
+.slick-slide img {
+width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+color: white;
+}
+
+/* @media (max-width: 770px) {
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+} */
+
+.slick-slide {
+transition: all ease-in-out 0.3s;
+
+}
+
+
+
+.slick-current {
+opacity: 1;
+}
+
+/*============================================================*/
+/* Círculos animados */
+/*============================================================*/
+
+
+.animated-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+    /* Posición inicial en el centro del contenedor */
+    top: 50%;
+    left: 0;
+    /* Transición */
+    animation: expand infinite;
+    animation-timing-function: ease-out;
+  }
+  
+  /* Primer círculo animado */
+  .animated-circle:nth-child(1) {
+    background-color: white;
+    animation-duration: 1s;
+  }
+  
+  /* Segundo círculo animado */
+  .animated-circle:nth-child(2) {
+    background-color: white;
+    animation-duration: 2s;
+  }
+  
+  /* Círculo principal */
+  .main-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    /* Centrar el círculo en el contenedor */
+    transform: translate(-50%, -50%);
+  }
+
+  /* Animación */
+  @keyframes expand {
+    0% {
+      width: 10px;
+      height: 10px;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      width: 20px;
+      height: 20px;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  .lili li{
+    list-style: inside;
+  }

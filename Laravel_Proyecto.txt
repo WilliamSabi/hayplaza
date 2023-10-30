@@ -1,0 +1,50 @@
+Proyecto en Laravel: Hay Plaza
+
+/*********************************************/
+/* Base de Datos: */
+/* root */
+/* 0123456789 */
+/* 3307 */
+/*********************************************/
+
+/*********************************************/
+/* Admin Web: */
+/* plaza */
+/* sabicriollo@gmail.com */
+/* opa123456 */
+/*********************************************/
+
+1) composer global require laravel/installer (Para instalar Laravel en mi PC)
+2) laravel new web_plaza (Crear mi proyecto)
+3) composer require laravel/breeze --dev (Instalar dependencias para Breeze)
+4) php artisan breeze:install (Crear el login y el register)
+5) php artisan migrate (sincronizar base de datos)
+6) npm install (npm run dev --> para ejecutar)
+
+/*********************************************/
+/* Comandos a tener en cuenta */
+/*********************************************/
+
+-) Crear nueva migración ---> php artisan make:migration add_rango_to_users_table
+-) Ejecutar una migración en especifica ---> php artisan migrate --path=database/migrations/2023_10_05_155428_add_rango_to_users_table.php
+-) Crea un nuevo model ---> php artisan make:model Lugar
+-) Crea un Seeders (Para llenar una tabla) ---> php artisan make:seeder LugaresTableSeeder
+-) Para manejar archivos .ZIP ---> composer require league/flysystem-ziparchive
+
+
+
+/*********************************************/
+
+public function run()
+{
+    // Insertar múltiples registros a la vez
+    Lugar::insert([
+        ['nombre' => 'Lugar 1'],
+        ['nombre' => 'Lugar 2'],
+        //... Agrega todos los lugares que necesites
+    ]);
+}
+
+/*********************************************/
+
+-) Crea una clase para el envío de correos electrónicos ---> php artisan make:mail AsistenteRegistered
